@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбершоп "Бородинский"</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__logo">
+                <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа Бородинский">
+            </a>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item" href="info.html">
+                            <a class="header__nav-link" href="info.html">Информация</a>
+                        </li>
+                        <li class="header__nav-item" href="info.html">
+                            <a class="header__nav-link" href="news.html">Новости</a>
+                        </li>
+                        <li class="header__nav-item" href="info.html">
+                            <a class="header__nav-link" href="price.html">Прайс-лист</a>
+                        </li>
+                        <li class="header__nav-item" href="info.html">
+                            <a class="header__nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__user-nav">
+                        <li class="header__user-nav-item">
+                            <a class="header__login-link" href="login.html">Вход</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>     
+    </header>
+    <main>
+        <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
+
+        <section class="features">
+            <h2 class="visually-hidden">Преимущества</h2>
+        
+            <ul class="features__list">
+                <li class="features__item">
+                    <h3 class="features__heading">Быстро</h3>
+                    <p class="features__desc">
+                        Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы - счастливый обладатель стильной стрижки-минутки!
+                    </p>
+                </li>
+
+                <li class="feature__item">
+                    <h3 class="features__heading">Круто</h3>
+                    <p class="features__desc">
+                        Забудьте, как Вы стриглись раньше. Мы селаем из Вас звезду футбола или кино! Во всяком случае внешне.
+                    </p>
+                </li>
+
+                <li class="feature__item">
+                    <h3 class="features__heading">Дорого</h3>
+                    <p class="features__desc">
+                        Наши мастера - профессионалы своего дела и не могут стоить дешево.К тому же, разве цена не дает определенный статус?
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <div class="index-colums">
+            <section class="news">
+                <h2 class="news__title">Новости</h2>
+
+                <ul class="news__list">
+                    <li class="news__item">
+                        <p class="news__desc">
+                            Нам наконец завезли Ягермейстер! Теперь Вы сможете пропустить стаканчик во время стрижки
+                        </p>
+
+                        <time class="news__time" datetime="2021-03-19">19 Марта</time>
+                    </li>
+                </ul>
+
+                <a class="news__link" href="news.html">Все новости</a> 
+            </section>
+        </div>
+
+        <section class="gallery">
+            <h2 class="gallery__title">
+                Фотогаллерея
+            </h2>
+
+            <figure class="gallery__slider">
+                <a href="Ссылка">
+                    <img src="img/studio.jpg" width="286" height="164" alt="Фотография интерьера барбершопа Бородинский">
+                </a>
+            </figure>
+
+            <div class="gallery__buttons">
+                <button class="button gallery-button gallery-button-back">Назад</button>
+                <button class="button gallery-button gallery-button-next">Вперёд</button>
+            </div>
+        </section>
+
+        <div class="index-colums">
+            <section class="contacts">
+                <h2 class="contacts__title">
+                    Контактная информация
+                </h2>
+
+                <p class="contacts__desc">
+                    Инфа <br>
+                    Инфа2 <br>
+                    Инфа3 <br>
+                    Инфа
+                </p>
+
+                <a class="contacts__link" href="map.html">Как проехать</a>
+                <a class="contacts__link" href="contacts.html">Обратная связь</a>
+            </section>
+
+            <section class="appointment">
+                <h2 class="appointment__title">
+                    Записаться
+                </h2>
+
+                <p class="appointment__info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения</p>
+                <form class="appointment__form" action="utawarerumonobakemono@gmail.com" method="post">
+                    <p class="appointment__item">
+                        <label for="appointment__date">Дата</label>
+                        <input id="appointment__date" type="text" name="date" value="" placeholder="19.03.2021">
+                    </p>
+                    <p class="appointment__time">
+                        <label for="appointment__time">Время</label>
+                        <input id="appointment__time" type="text" name="time" value="" placeholder="12:00">
+                    </p>
+                    <p class="appointment__item">
+                        <label for="appointment__phone">Телефон</label>
+                        <input id="appointment__phone" type="text" name="phone" value="" placeholder="+375 25 123 45 67">
+                    </p>
+                    <button class="button" type="submit">Отправить</button> 
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__contacts">Контакты</p>
+
+            <div class="footer__social">
+                <b class="footer__call">Давайте дружить!</b>
+
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-button" href="линк">VK</a>
+                    </li>
+                    
+                    <li class="footer__social-item">
+                        <a class="social-button" href="линк">FB</a>
+                    </li>
+
+                    <li class="footer__social-item">
+                        <a class="social-button" href="линк">INST</a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="footer__dev-copyright">
+                <b class="footer__desc">
+                    Разработанно:
+                </b>
+                <a class="footer__link" href="https://github.com/SetanSan">SetanSan</a>
+            </p>
+        </div>
+    </footer>
+    <section class="modal-login">
+        <h2 class="modal-login__title">
+            Личный кабинет
+        </h2>
+        <p class="modal-login__label">
+            Введите логин и пароль.
+        </p>
+        <form class="modal-login__form" action="utawarerumonobakemono@gmail.com" method="POST">
+            <p class="modal-login__form-desc">
+                <label class="visually-hidden" for="modal-login__login-icon-user">Логин</label>
+                <input class="modal-login__login-icon-user" type="text" name="login" placeholder="Логин">
+            </p>
+            <p class="modal-login__form-desc">
+                <label class="visually-hidden" for="modal-login__login-icon-password">Пароль</label>
+                <input class="modal-login-icon-password" type="text" name="password" placeholder="Пароль">
+            </p>
+            <p class="modal-login__login-password-info">
+                <label class="modal-login__password-recovery" for="modal-login__login-password-info">
+                    <input class="visually-hidden" type="checkbox" name="remember">
+                    <span class="modal-login__checkbox-indicator"></span>
+                    Запомнить меня
+                </label>
+                <a class="modal-login__restore" href="линк">Забыл пароль!</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <button class="modal-login__close">Закрыть</button>
+    </section>
+
+    <section class="modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p class="modal-map__map-picture">
+            <img src="img/map.jpg" width="780" height="560" alt="Полное название адреса">
+        </p>
+        <button class="modal-map__close" type="button">Закрыть</button>
+    </section>
+</body>
+</html>

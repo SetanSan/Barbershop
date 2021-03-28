@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог барбершопа "Бородинский"</title>
+</head>
+<body class="inner-page">
+    <header class="header">
+        <nav class="header__nav-list">
+            <a class="header__logo">
+                <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа Бородинский">
+            </a>
+            
+            <ul class="header__nav-list">
+                <li class="header__nav-item" href="info.html">
+                    <a class="header__nav-link" href="info.html">Информация</a>
+                </li>
+                <li class="header__nav-item" href="info.html">
+                    <a class="header__nav-link" href="news.html">Новости</a>
+                </li>
+                <li class="header__nav-item" href="info.html">
+                    <a class="header__nav-link" href="price.html">Прайс-лист</a>
+                </li>
+                <li class="header__nav-item" href="info.html">
+                    <a class="header__nav-link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+
+            <ul class="header__user-nav">
+                <li class="header__login-link">Вход</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="catalog__page-title">Средства ухода</h1>
+        <ul class="breadscrumbs">
+            <li>
+                <a class="catalog__page-item" href="index.html">Главная</a>
+            </li>
+            <li>
+                <a class="catalog__page-item" href="catalog.html">Магазин</a>
+            </li>
+            <li class="breadscrumbs__current">Средства для ухода</li>
+        </ul>
+
+        <section class="catalog__filters">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form class="catalog__filters" method="get" action="utawarerumonobakemono@gmail.com">
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul class="catalog__item-list"> 
+                        <li class="catalog__filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+                            <label for="filter-baxter-of-california">Baxter of California</label>
+                        </li>                        
+                        <li class="catalog__filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mr-natty" id="filter-mr-natty">
+                            <label for="filter-mr-natty">Mr Natty</label>
+                        </li>
+                        <li class="catalog__filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavecito">
+                            <label for="filter-suavecito">Suavecito</label>
+                        </li>
+                        <li class="catalog__filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+                            <label for="filter-malin-goetz">Malin+Goetz</label>
+                        </li>
+                        <li class="catalog__filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murrays" id="filter-murrays">
+                            <label for="filter-murrays">Murray's</label>
+                        </li>
+                        <li class="catalog__filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" id="filter-american-crew">
+                            <label for="filter-american-crew">American Crew</label>
+                        </li>                        
+                    </ul>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

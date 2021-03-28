@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр товара</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__logo">
+                <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа Бородинский">
+            </a>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item" href="info.html">
+                            <a class="header__nav-link" href="info.html">Информация</a>
+                        </li>
+                        <li class="header__nav-item" href="info.html">
+                            <a class="header__nav-link" href="news.html">Новости</a>
+                        </li>
+                        <li class="header__nav-item" href="info.html">
+                            <a class="header__nav-link" href="price.html">Прайс-лист</a>
+                        </li>
+                        <li class="header__nav-item" href="info.html">
+                            <a class="header__nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__user-nav">
+                        <li class="header__user-nav-item">
+                            <a class="header__login-link" href="login.html">Вход</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>     
+    </header>
+    <main>
+        <h1 class="page-title">Набор для путешествий Baxter of California</h1>
+        <ul class="breadscrumbs">
+            <li class="breadscrumbs__item">
+                <a href="index.html">Главная</a>
+            </li>
+            <li class="breadscrumbs__item">
+                <a href="link">Магазин</a>
+            </li>
+            <li class="breadscrumbs__item">
+                <a href="link">Средства для ухода</a>
+            </li>
+            <li class="breadscrumbs__current">
+                <a>Набор для путешествий Baxter of California</a>
+            </li>
+        </ul>
+        <section class="product__photos">
+            <h2 class="visually-hidden">Изображение товара</h2>
+            <p class="product__photos-full">
+                <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
+            </p>
+            <ul class="product__photos-list">
+                <li class="product__photo-item">
+                    <img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас">
+                </li>
+                <li class="product__photo-item">
+                    <img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль">
+                </li>
+                <li class="product__photo-item">
+                    <img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части">
+                </li>
+            </ul>
+        </section>
+        <section class="product__info">
+            <h2 class="visually-hidden">Описание товара</h2>
+            <p class="product__availability">Есть в наличии</p>
+            <p class="product__article">Dexter-ae</p>
+            <p class="product__text">Описание товара</p>
+            <p class="product__price">
+                <b>2 900 RUB</b>
+                <a class="button" href="link">Купить</a>
+            </p>     
+            <h3>В набор входят:</h3>
+            <ul>
+                <li>Наименование1</li>
+                <li>Наименование2</li>
+                <li>Наименование3</li>
+                <li>Наименование3</li>
+                <li>Наименование4</li>
+                <li>Наименование5</li>
+            </ul>       
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__contacts">Контакты</p>
+
+            <div class="footer__social">
+                <b class="footer__call">Давайте дружить!</b>
+
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-button" href="линк">VK</a>
+                    </li>
+                    
+                    <li class="footer__social-item">
+                        <a class="social-button" href="линк">FB</a>
+                    </li>
+
+                    <li class="footer__social-item">
+                        <a class="social-button" href="линк">INST</a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="footer__dev-copyright">
+                <b class="footer__desc">
+                    Разработанно:
+                </b>
+                <a class="footer__link" href="https://github.com/SetanSan">SetanSan</a>
+            </p>
+        </div>
+    </footer>
+    <section class="modal-login">
+        <h2 class="modal-login__title">
+            Личный кабинет
+        </h2>
+        <p class="modal-login__label">
+            Введите логин и пароль.
+        </p>
+        <form class="modal-login__form" action="utawarerumonobakemono@gmail.com" method="POST">
+            <p class="modal-login__form-desc">
+                <label class="visually-hidden" for="modal-login__login-icon-user">Логин</label>
+                <input class="modal-login__login-icon-user" type="text" name="login" placeholder="Логин">
+            </p>
+            <p class="modal-login__form-desc">
+                <label class="visually-hidden" for="modal-login__login-icon-password">Пароль</label>
+                <input class="modal-login-icon-password" type="text" name="password" placeholder="Пароль">
+            </p>
+            <p class="modal-login__login-password-info">
+                <label class="modal-login__password-recovery" for="modal-login__login-password-info">
+                    <input class="visually-hidden" type="checkbox" name="remember">
+                    <span class="modal-login__checkbox-indicator"></span>
+                    Запомнить меня
+                </label>
+                <a class="modal-login__restore" href="линк">Забыл пароль!</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <button class="modal-login__close">Закрыть</button>
+    </section>
+
+    <section class="modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p class="modal-map__map-picture">
+            <img src="img/map.jpg" width="780" height="560" alt="Полное название адреса">
+        </p>
+        <button class="modal-map__close" type="button">Закрыть</button>
+    </section>
+</body>
+</html>

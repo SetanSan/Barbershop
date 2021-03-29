@@ -9,11 +9,11 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner-page">
     <header class="header">
         <nav class="header__nav">
             <a class="header__logo">
-                <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа Бородинский">
+                <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
             </a>
             <div class="nav-wrapper">
                 <div class="container">
@@ -40,7 +40,7 @@
                 </div>
             </div>     
     </header>
-    <main>
+    <main class="container">
         <h1 class="page-title">Набор для путешествий Baxter of California</h1>
         <ul class="breadscrumbs">
             <li class="breadscrumbs__item">
@@ -58,7 +58,7 @@
         </ul>
         <section class="product__photos">
             <h2 class="visually-hidden">Изображение товара</h2>
-            <p class="product__photos-full">
+            <p class="product__photo-full">
                 <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
             </p>
             <ul class="product__photos-list">
@@ -75,8 +75,10 @@
         </section>
         <section class="product__info">
             <h2 class="visually-hidden">Описание товара</h2>
-            <p class="product__availability">Есть в наличии</p>
-            <p class="product__article">Dexter-ae</p>
+            <div class="product__description">
+                <p class="product__availability">Есть в наличии</p>
+                <p class="product__article">Dexter-ae</p>
+            </div>  
             <p class="product__text">Описание товара</p>
             <p class="product__price">
                 <b>2 900 RUB</b>

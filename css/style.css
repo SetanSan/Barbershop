@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #000000;
+    background-image: url("img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    font: inherit;
+
+    text-align: center;
+    color: #ffffff;
+    vertical-align: center;
+    text-transform: uppercase;
+
+    background-color: #000000;
+    border: none;
+}
+
+.button: hover,
+.button: focus,
+.button: active {
+    background-color: #663d15;
+}
+
+.header__nav {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+
+    background-color: #000000;
+}
+
+.header__nav-list,
+.header__user-nav {
+    list-style: none;
+}
+
+.header__nav-list a,
+.header__user-nav a {
+    color: #ffffff;
+}
+
+.header__nav-list a: hover,
+.header__nav-list a: focus,
+.header__user-nav a: hover,
+.header__user-nav a: focus {
+    background-color: #242424;
+}
+
+.features__list {
+    list-style: none;
+}
+
+.feature__item {
+    text-align: center;
+}
+
+.feature__item h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-columns {
+    color: #000000;
+
+    background-color: #f8f5f2;
+    background-image: url("img/pattern-light.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.index-columns h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news__list {
+    list-style: none;
+}
+
+.news__item time {
+    text-transform: none;
+}
+
+.gallery__slider {
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+
+.appointment__item input {
+    font: inherit;
+
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+
+.appointment__item input: focus {
+    border-color: #663d15;
+}
+
+.footer {
+    color: #ffffff;
+
+    background-color: #212121;
+    background-image: url("img/pattern-dark.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.footer__contacts a {
+    color:#ffffff;
+    text-decoration: underline;
+}
+
+.footer__contacts a: hover,
+.footer__contacts a: focus {
+    text-decoration: none;
+}
+
+.footer__social {
+    text-align: center;
+}
+
+.footer__social ul {
+    list-style: none;
+}
+
+.footer__social-button {
+    color: #ffffff;
+}
+
+.footer__dev-copyright {
+    text-align: center;
+}
+
+.footer__dev-copyright .button: hover,
+.footer__dev-copyright .button: focus {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.modal {
+    color: #000000;
+
+    background-color: #f8f3f0;
+    background-image: url("img/pattern-light.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}

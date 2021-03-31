@@ -16,7 +16,7 @@
                 <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа Бородинский">
             </a>
             <div class="nav-wrapper">
-                <div class="container">
+                <div class="nav-container">
                     <ul class="header__nav-list">
                         <li class="header__nav-item" href="info.html">
                             <a class="header__nav-link" href="info.html">Информация</a>
@@ -38,36 +38,39 @@
                         </li>
                     </ul>
                 </div>
-            </div>     
+            </div>
+        </nav>
     </header>
     <main>
         <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
 
         <section class="features">
-            <h2 class="visually-hidden">Преимущества</h2>
+            <div class="container">
+                <h2 class="visually-hidden">Преимущества</h2>
         
-            <ul class="features__list">
-                <li class="feature__item">
-                    <h3 class="features__heading">Быстро</h3>
-                    <p class="features__desc">
-                        Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы - счастливый обладатель стильной стрижки-минутки!
-                    </p>
-                </li>
-
-                <li class="feature__item">
-                    <h3 class="features__heading">Круто</h3>
-                    <p class="features__desc">
-                        Забудьте, как Вы стриглись раньше. Мы селаем из Вас звезду футбола или кино! Во всяком случае внешне.
-                    </p>
-                </li>
-
-                <li class="feature__item">
-                    <h3 class="features__heading">Дорого</h3>
-                    <p class="features__desc">
-                        Наши мастера - профессионалы своего дела и не могут стоить дешево.К тому же, разве цена не дает определенный статус?
-                    </p>
-                </li>
-            </ul>
+                <ul class="features__list">
+                    <li class="feature__item">
+                        <h3 class="features__heading">Быстро</h3>
+                        <p class="features__desc">
+                            Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы - счастливый обладатель стильной стрижки-минутки!
+                        </p>
+                    </li>
+    
+                    <li class="feature__item">
+                        <h3 class="features__heading">Круто</h3>
+                        <p class="features__desc">
+                            Забудьте, как Вы стриглись раньше. Мы селаем из Вас звезду футбола или кино! Во всяком случае внешне.
+                        </p>
+                    </li>
+    
+                    <li class="feature__item">
+                        <h3 class="features__heading">Дорого</h3>
+                        <p class="features__desc">
+                            Наши мастера - профессионалы своего дела и не могут стоить дешево.К тому же, разве цена не дает определенный статус?
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <div class="index-columns">
@@ -86,24 +89,26 @@
 
                 <a class="news__link" href="news.html">Все новости</a> 
             </section>
+            
+            <section class="gallery">
+                <h2 class="gallery__title">
+                    Фотогаллерея
+                </h2>
+    
+                <figure class="gallery__slider">
+                    <a href="Ссылка">
+                        <img src="img/studio.jpg" width="286" height="164" alt="Фотография интерьера барбершопа Бородинский">
+                    </a>
+                </figure>
+    
+                <div class="gallery__buttons">
+                    <button class="button gallery-button gallery-button-back">Назад</button>
+                    <button class="button gallery-button gallery-button-next">Вперёд</button>
+                </div>
+            </section>
+
         </div>
 
-        <section class="gallery">
-            <h2 class="gallery__title">
-                Фотогаллерея
-            </h2>
-
-            <figure class="gallery__slider">
-                <a href="Ссылка">
-                    <img src="img/studio.jpg" width="286" height="164" alt="Фотография интерьера барбершопа Бородинский">
-                </a>
-            </figure>
-
-            <div class="gallery__buttons">
-                <button class="button gallery-button gallery-button-back">Назад</button>
-                <button class="button gallery-button gallery-button-next">Вперёд</button>
-            </div>
-        </section>
 
         <div class="index-columns">
             <section class="contacts">

@@ -15,32 +15,28 @@
             <a class="header__logo">
                 <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
             </a>
-            <div class="nav-wrapper">
-                <div class="container">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="info.html">Информация</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="news.html">Новости</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="price.html">Прайс-лист</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="contacts.html">Контакты</a>
-                        </li>
-                    </ul>
+            
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="info.html">Информация</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="news.html">Новости</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="price.html">Прайс-лист</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
 
-                    <ul class="header__user-nav">
-                        <li class="header__user-nav-item">
-                            <a class="header__login-link" href="login.html">Вход</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>     
+            <ul class="header__user-nav">
+                <li class="header__login-link">Вход</li>
+            </ul>
+        </nav>
     </header>
-    <main class="container">
+    <main class="nav-container">
         <h1 class="page-title">Набор для путешествий Baxter of California</h1>
         <ul class="breadscrumbs">
             <li class="breadscrumbs__item">
@@ -56,23 +52,26 @@
                 <a>Набор для путешествий Baxter of California</a>
             </li>
         </ul>
-        <section class="product__photos">
-            <h2 class="visually-hidden">Изображение товара</h2>
-            <p class="product__photo-full">
-                <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
-            </p>
-            <ul class="product__photos-list">
-                <li class="product__photo-item">
-                    <img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас">
-                </li>
-                <li class="product__photo-item">
-                    <img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль">
-                </li>
-                <li class="product__photo-item">
-                    <img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части">
-                </li>
-            </ul>
-        </section>
+        <div class="catalog-columns">
+            
+            <section class="product__photos">
+                <h2 class="visually-hidden">Изображение товара</h2>
+                <p class="product__photo-full">
+                    <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
+                </p>
+                <ul class="product__photos-list">
+                    <li class="product__photo-item">
+                        <img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас">
+                    </li>
+                    <li class="product__photo-item">
+                        <img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль">
+                    </li>
+                    <li class="product__photo-item">
+                        <img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части">
+                    </li>
+                </ul>
+            </section>
+        </div>
         <section class="product__info">
             <h2 class="visually-hidden">Описание товара</h2>
             <div class="product__description">
@@ -136,14 +135,14 @@
         <form class="modal-login__form" action="utawarerumonobakemono@gmail.com" method="POST">
             <p class="modal-login__form-desc">
                 <label class="visually-hidden" for="modal-login__login-icon-user">Логин</label>
-                <input class="modal-login__login-icon-user" type="text" name="login" placeholder="Логин">
+                <input class="modal-login__login-icon-user" id="modal-login__login-icon-user" type="text" name="login" placeholder="Логин">
             </p>
             <p class="modal-login__form-desc">
                 <label class="visually-hidden" for="modal-login__login-icon-password">Пароль</label>
-                <input class="modal-login-icon-password" type="text" name="password" placeholder="Пароль">
+                <input class="modal-login-icon-password" id="modal-login__login-icon-password" type="text" name="password" placeholder="Пароль">
             </p>
             <p class="modal-login__login-password-info">
-                <label class="modal-login__password-recovery" for="modal-login__login-password-info">
+                <label class="modal-login__password-recovery">
                     <input class="visually-hidden" type="checkbox" name="remember">
                     <span class="modal-login__checkbox-indicator"></span>
                     Запомнить меня

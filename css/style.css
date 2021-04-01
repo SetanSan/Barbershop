@@ -112,6 +112,14 @@ a {
     height: 153px;
 }
 
+.header__login-link {
+    height: 70px;
+    text-align: right;
+    padding-top: 25px;
+
+    list-style: none;
+}
+
 .inner-page .header__logo {
     order: 0;
     
@@ -164,6 +172,7 @@ a {
 .header__user-nav a:focus {
     background-color: #242424;
 }
+
 
 .nav-container {
     width: 940px;
@@ -245,6 +254,15 @@ a {
 }
 
 .catalog__page-title {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.page-title {
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
@@ -403,6 +421,14 @@ a {
     margin: 0;
 
     list-style: none;
+}
+
+.product__photos {
+    width: 460px;
+}
+
+.product__info {
+    width: 390px;
 }
 
 .pagination__item a {

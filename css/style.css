@@ -328,7 +328,8 @@ a {
 
 .breadscrumbs {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
     padding: 0;
     margin: 0;
     margin-bottom: 50px;
@@ -353,6 +354,7 @@ a {
 
 .breadscrumbs__item {
     line-height: 60px;
+    margin-right: 60px;
 }
 
 .catalog__filter fieldset {

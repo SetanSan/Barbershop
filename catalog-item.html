@@ -11,36 +11,34 @@
 </head>
 <body class="inner-page">
     <header class="header">
-        <nav class="header__nav">
-            <a class="header__logo">
-                <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
-            </a>
-            <div class="nav-wrapper">
-                <div class="container">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="info.html">Информация</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="news.html">Новости</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="price.html">Прайс-лист</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="contacts.html">Контакты</a>
-                        </li>
-                    </ul>
-
-                    <ul class="header__user-nav">
-                        <li class="header__user-nav-item">
-                            <a class="header__login-link" href="login.html">Вход</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>     
+        <div class="container">
+            <nav class="header__nav">
+                <a class="header__logo">
+                    <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
+                </a>
+                
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="info.html">Информация</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="news.html">Новости</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="price.html">Прайс-лист</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+    
+                <ul class="header__user-nav">
+                    <li class="header__login-link">Вход</li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="container">
+    <main class="nav-container">
         <h1 class="page-title">Набор для путешествий Baxter of California</h1>
         <ul class="breadscrumbs">
             <li class="breadscrumbs__item">
@@ -53,47 +51,55 @@
                 <a href="link">Средства для ухода</a>
             </li>
             <li class="breadscrumbs__current">
-                <a>Набор для путешествий Baxter of California</a>
+                Набор для путешествий Baxter of California
             </li>
         </ul>
-        <section class="product__photos">
-            <h2 class="visually-hidden">Изображение товара</h2>
-            <p class="product__photo-full">
-                <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
-            </p>
-            <ul class="product__photos-list">
-                <li class="product__photo-item">
-                    <img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас">
-                </li>
-                <li class="product__photo-item">
-                    <img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль">
-                </li>
-                <li class="product__photo-item">
-                    <img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части">
-                </li>
-            </ul>
-        </section>
-        <section class="product__info">
-            <h2 class="visually-hidden">Описание товара</h2>
-            <div class="product__description">
-                <p class="product__availability">Есть в наличии</p>
-                <p class="product__article">Dexter-ae</p>
-            </div>  
-            <p class="product__text">Описание товара</p>
-            <p class="product__price">
-                <b>2 900 RUB</b>
-                <a class="button" href="link">Купить</a>
-            </p>     
-            <h3>В набор входят:</h3>
-            <ul>
-                <li>Наименование1</li>
-                <li>Наименование2</li>
-                <li>Наименование3</li>
-                <li>Наименование3</li>
-                <li>Наименование4</li>
-                <li>Наименование5</li>
-            </ul>       
-        </section>
+        <div class="catalog-columns">
+            
+            <section class="product__photos">
+                <h2 class="visually-hidden">Изображение товара</h2>
+                <p class="product__photo-full">
+                    <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
+                </p>
+                <ul class="product__photos-list">
+                    <li class="product__photo-item">
+                        <img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас">
+                    </li>
+                    <li class="product__photo-item">
+                        <img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль">
+                    </li>
+                    <li class="product__photo-item">
+                        <img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части">
+                    </li>
+                </ul>
+            </section>
+            <section class="product__info">
+                <h2 class="visually-hidden">Описание товара</h2>
+                <div class="product__description">
+                    <p class="product__availability">Есть в наличии</p>
+                    <p class="product__article">Dexter-ae</p>
+                </div>  
+                <p class="product__text">
+                    
+                    Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все,
+                    что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий
+                    крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+                
+                </p>
+                <p class="product__price">
+                    <b>2 900 RUB</b>
+                    <a class="button" href="link">Купить</a>
+                </p>     
+                <h3>В набор входят:</h3>
+                <ul>
+                    <li>Средство для умывания (50 мл)</li>
+                    <li>Увлажняющий крем (50 мл)</li>
+                    <li>Крем для бритья (50 мл)</li>
+                    <li>Крем после бритья, шампунь (50 мл)</li>
+                    <li>Удобная кожаная косметичка</li>
+                </ul>       
+            </section>
+        </div>
     </main>
     
     <footer class="footer">
@@ -136,14 +142,14 @@
         <form class="modal-login__form" action="utawarerumonobakemono@gmail.com" method="POST">
             <p class="modal-login__form-desc">
                 <label class="visually-hidden" for="modal-login__login-icon-user">Логин</label>
-                <input class="modal-login__login-icon-user" type="text" name="login" placeholder="Логин">
+                <input class="modal-login__login-icon-user" id="modal-login__login-icon-user" type="text" name="login" placeholder="Логин">
             </p>
             <p class="modal-login__form-desc">
                 <label class="visually-hidden" for="modal-login__login-icon-password">Пароль</label>
-                <input class="modal-login-icon-password" type="text" name="password" placeholder="Пароль">
+                <input class="modal-login-icon-password" id="modal-login__login-icon-password" type="text" name="password" placeholder="Пароль">
             </p>
             <p class="modal-login__login-password-info">
-                <label class="modal-login__password-recovery" for="modal-login__login-password-info">
+                <label class="modal-login__password-recovery">
                     <input class="visually-hidden" type="checkbox" name="remember">
                     <span class="modal-login__checkbox-indicator"></span>
                     Запомнить меня

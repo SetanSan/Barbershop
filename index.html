@@ -182,7 +182,7 @@
             </p>
         </div>
     </footer>
-    <section class="modal modal-login">
+    <section class="modal-login">
         <h2 class="modal-login__title">
             Личный кабинет
         </h2>
@@ -192,14 +192,14 @@
         <form class="modal-login__form" action="utawarerumonobakemono@gmail.com" method="POST">
             <p class="modal-login__form-desc">
                 <label class="visually-hidden" for="modal-login__login-icon-user">Логин</label>
-                <input class="modal-login__login-icon-user" type="text" name="login" placeholder="Логин">
+                <input class="modal-login__login-icon-user" id="modal-login__login-icon-user" type="text" name="login" placeholder="Логин">
             </p>
             <p class="modal-login__form-desc">
                 <label class="visually-hidden" for="modal-login__login-icon-password">Пароль</label>
-                <input class="modal-login-icon-password" type="text" name="password" placeholder="Пароль">
+                <input class="modal-login-icon-password" id="modal-login__login-icon-password" type="text" name="password" placeholder="Пароль">
             </p>
             <p class="modal-login__login-password-info">
-                <label class="modal-login__password-recovery" for="modal-login__login-password-info">
+                <label class="modal-login__password-recovery">
                     <input class="visually-hidden" type="checkbox" name="remember">
                     <span class="modal-login__checkbox-indicator"></span>
                     Запомнить меня

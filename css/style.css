@@ -23,6 +23,7 @@ a {
 
 img {
     max-width: 100%;
+    height: auto;
 } 
 
 ul {
@@ -31,16 +32,24 @@ ul {
     margin: 0;
   }
 
-  .visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding:0 !important;
-    border:0 !important;
-    height: 1px !important; 
-    width: 1px !important; 
+  .visually-hidden:not(:focus):not(:active),
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  
 
   .container {
     margin: 0 auto;
@@ -71,6 +80,10 @@ a {
 }
 
 .button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right: 16px;
+
     font: inherit;
 
     text-align: center;
@@ -80,6 +93,18 @@ a {
 
     background-color: #000000;
     border: none;
+}
+
+.button.disabled,
+.button:disabled {
+    cursor: default;
+    opacity: .5;
+    background-color: #000000;
+}
+
+.button-wrapper {
+    display: flex;
+    padding: 10px 30px;
 }
 
 .button:hover,
@@ -131,7 +156,7 @@ a {
 
 .header__nav-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     width: 620px;
     margin: 0;
     padding: 0;
@@ -142,7 +167,7 @@ a {
 }
 
 .header__user-nav {
-    display: flex;
+    /* display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 140px;
@@ -150,7 +175,9 @@ a {
     margin: 0;
     padding: 0;
 
-    list-style: none;
+    list-style: none; */
+    display: flex;
+    max-width: 140px;
 }
 
 .inner-page .header__user-nav {
@@ -159,7 +186,38 @@ a {
 
 .header__nav-list a,
 .header__user-nav a {
+    display: block;
+    padding: 25px 20px;
+    
     color: #ffffff;
+}
+
+.header__user-nav .header__login-link {
+    position:relative;
+    padding-left: 50px;
+}
+
+.header__login-link::before {
+    content: "";
+
+    position: absolute;
+    top: 27px;
+    left: 24px;
+    
+    width: 16px;
+    height: 18px;
+
+    background-image: url("../img/login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: .3;
+}
+
+.header__login-link:hover::before,
+.header__login-link:focus::before,
+.header__login-link:active::before {
+    opacity: 1;
 }
 
 .header__nav-list a:hover,
@@ -195,8 +253,33 @@ a {
 }
 
 .feature__item h3 {
+    position: relative;
+    
+    margin: 0;
+    margin-bottom: 60px;
+    
     font-size: 30px;
     line-height: 42px;
+}
+
+.feature__item h3::after {
+    content: "";
+
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -10px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #fff;
+
+    transform: rotate(45deg);
+}
+
+.feature__item p {
+    margin: 0 10px;
 }
 
 .index-columns {
@@ -208,12 +291,17 @@ a {
     color: #000000;
 
     background-color: #f8f5f2;
-    background-image: url("../img/pattern-light.jpg");
-    background-position: 0 0;
-    background-repeat: repeat;
+    background-image:
+        url("../img/line.png"), 
+        url("../img/pattern-light.jpg");
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
 }
 
 .index-columns h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    
     font-size: 30px;
     line-height: 42px;
 }
@@ -223,7 +311,19 @@ a {
 }
 
 .news__list {
+    margin: 0px;
+    margin-bottom: 25px;
+    padding: 0;
+    
     list-style: none;
+}
+
+.news__item {
+    margin-bottom: 25px;
+}
+
+.news__item p {
+    margin: 0;
 }
 
 .news__item time {
@@ -235,14 +335,47 @@ a {
 }
 
 .gallery__slider {
+    height: 164px;
     margin: 0;
     
     background-color: #cccccc;
     border: 7px solid #ffffff;
 }
 
+.gallery__slider img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery-button {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-button-back {
+    left: 0;
+}
+
+.gallery-button-next {
+    right: 0;
+}
+
+.gallery-container {
+    position: relative;
+    height: 260px;
+}
+
 .contacts {
     width: 380px;
+}
+
+.contacts p {
+    margin: 0;
+    margin-bottom: 25px;
 }
 
 .appointment {
@@ -310,6 +443,10 @@ a {
     padding-top: 15px;
 }
 
+.appointment__item {
+    width: 140px;
+}
+
 .appointment__item input {
     font: inherit;
 
@@ -319,6 +456,17 @@ a {
 
 .appointment__item input:focus {
     border-color: #663d15;
+}
+
+.appointment__info {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.appointment__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .catalog__page-title {

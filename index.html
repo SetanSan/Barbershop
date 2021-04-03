@@ -73,7 +73,7 @@
             </div>
         </section>
 
-        <div class="index-columns">
+        <div class="index-columns container">
             <section class="news">
                 <h2 class="news__title">Новости</h2>
 
@@ -87,44 +87,46 @@
                     </li>
                 </ul>
 
-                <a class="news__link" href="news.html">Все новости</a> 
+                <a class="button" href="news.html">Все новости</a> 
             </section>
             
             <section class="gallery">
                 <h2 class="gallery__title">
                     Фотогаллерея
                 </h2>
-    
-                <figure class="gallery__slider">
-                    <a href="Ссылка">
-                        <img src="img/studio.jpg" width="286" height="164" alt="Фотография интерьера барбершопа Бородинский">
-                    </a>
-                </figure>
-    
-                <div class="gallery__buttons">
-                    <button class="button gallery-button gallery-button-back">Назад</button>
-                    <button class="button gallery-button gallery-button-next">Вперёд</button>
+                <div class="gallery-container">
+                    <figure class="gallery__slider">
+                        <a href="Ссылка">
+                            <img src="img/studio.jpg" width="286" height="164" alt="Фотография интерьера барбершопа Бородинский">
+                        </a>
+                    </figure>
+                    <div class="gallery__buttons">
+                        <button class="button gallery-button gallery-button-back" type="button" disabled>Назад</button>
+                        <button class="button gallery-button gallery-button-next" type="button">Вперёд</button>
+                    </div>
                 </div>
             </section>
-
         </div>
 
 
-        <div class="index-columns">
+        <div class="index-columns container">
             <section class="contacts">
-                <h2 class="contacts__title">
+                <h2>
                     Контактная информация
                 </h2>
-
-                <p class="contacts__desc">
-                    Инфа <br>
-                    Инфа2 <br>
-                    Инфа3 <br>
-                    Инфа
+                <p>
+                    Барбершоп «Бородинский»
+                    <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+                    <br> Телефон: +7 (812) 666-02-66
+                </p>
+                <p>
+                    Время работы:
+                    <br> пн—пт: с 10:00 до 22:00
+                    <br> сб—вс: с 10:00 до 19:00
                 </p>
 
-                <a class="contacts__link" href="map.html">Как проехать</a>
-                <a class="contacts__link" href="contacts.html">Обратная связь</a>
+                <a class="button" href="map.html">Как проехать</a>
+                <a class="button" href="contacts.html">Обратная связь</a>
             </section>
 
             <section class="appointment">
@@ -141,6 +143,10 @@
                     <p class="appointment__time">
                         <label for="appointment__time">Время</label>
                         <input id="appointment__time" type="text" name="time" value="" placeholder="12:00">
+                    </p>
+                    <p class="appointment__item">
+                        <label for="appointment__name">Ваше имя</label>
+                        <input id="appointment__name" type="text" name="name" value="" placeholder="Ваше имя">
                     </p>
                     <p class="appointment__item">
                         <label for="appointment__phone">Телефон</label>

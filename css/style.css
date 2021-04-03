@@ -82,7 +82,7 @@ a {
 .button {
     display: inline-block;
     padding: 10px 30px;
-    margin-right: 16px;
+    /* margin-right: 16px; */
 
     font: inherit;
 
@@ -94,6 +94,7 @@ a {
     background-color: #000000;
     border: none;
 }
+
 
 .button.disabled,
 .button:disabled {
@@ -382,6 +383,12 @@ a {
     width: 300px;
 }
 
+.appointment .button {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+}
+
 .catalog__page-title {
     margin: 0;
     margin-bottom: 15px;
@@ -445,14 +452,31 @@ a {
 
 .appointment__item {
     width: 140px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.appointment__item label {
+    display: block;
+    margin-bottom: 9px;
+    margin-left: 15px;
 }
 
 .appointment__item input {
+    box-sizing: border-box;
+    width: 140px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+
     font: inherit;
 
     background-color: transparent;
     border: 2px solid #000000;
 }
+
+
 
 .appointment__item input:focus {
     border-color: #663d15;
@@ -693,22 +717,61 @@ a {
 }
 
 .footer__social ul {
+    display: flex;
+    width: 141px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding: 0;
+    
     list-style: none;
 }
 
-.footer__social-button {
-    color: #ffffff;
+.footer__social b {
+    display: block;
+    margin-bottom: 15px;
 }
 
-.footer__dev-copyright {
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+
+    background-color: #000000;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+    fill: #000000;
+}
+
+.footer-copyright {
     width: 150px;
     margin: 0;
     margin-left: auto;   
     text-align: center;
 }
 
-.footer__dev-copyright .button:hover,
-.footer__dev-copyright .button:focus {
+footer-copyright b {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer-copyright .button {
+    display: block;
+    margin-right: 0;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
     color: #000000;
 
     background-color: #ffffff;

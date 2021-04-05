@@ -552,11 +552,6 @@ a {
     color: #aba9a7;
 }
 
-/* .breadscrumbs__item {
-    line-height: 60px;
-    margin-right: 60px;
-} */
-
 .catalog__filter fieldset {
     padding: 0;
     margin: 0;
@@ -742,25 +737,6 @@ a {
     margin-right: 0;
 }
 
-.product__photos {
-    width: 460px;
-}
-
-.product__info {
-    width: 390px;
-    padding-top: 23px;
-}
-
-.product__info .product__price {
-    display: flex;
-    margin-bottom: 63px;
-}
-
-.product__price .button {
-    padding-left: 17px;
-    padding-right: 17px;
-}
-
 .pagination__item a {
     display: block;
     padding: 10px 19px;
@@ -788,6 +764,25 @@ a {
     color: #000000;
 
     background-color: #ffffff;
+}
+
+.product__photos {
+    width: 460px;
+}
+
+.product__info {
+    width: 390px;
+    padding-top: 23px;
+}
+
+.product__info .product__price {
+    display: flex;
+    margin-bottom: 63px;
+}
+
+.product__price .button {
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 .product__description {
@@ -958,11 +953,6 @@ a {
     list-style: none;
 }
 
-.footer__social b {
-    display: block;
-    margin-bottom: 15px;
-}
-
 .social-button {
     display: flex;
     align-items: center;
@@ -990,7 +980,7 @@ a {
     text-align: center;
 }
 
-footer-copyright b {
+.footer-copyright b {
     display: block;
     margin-bottom: 15px;
 }
@@ -1005,6 +995,11 @@ footer-copyright b {
     color: #000000;
 
     background-color: #ffffff;
+}
+
+.footer__social b {
+    display: block;
+    margin-bottom: 15px;
 }
 
 .modal {
@@ -1092,6 +1087,65 @@ footer-copyright b {
     display: block;
     animation-name: bounce;
     animation-duration: .6s
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+    
+    width: 22px;
+    height: 22px;
+
+    font-size: 0;
+
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 2px;
+
+    width: 19px;
+    height: 3px;
+
+    background-color: #d0d0d0;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-map {
+    top: 50%;
+    left: 50%;
+
+    width: 766px;
+    height: 561px;
+    margin-top: -280px;
+    margin-left: -390px;
+
+    border: 7px solid white;
+}
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: .6s;
+}
+
+.modal-map p {
+    margin: 0;
 }
 
 .login-form p {
@@ -1199,60 +1253,6 @@ footer-copyright b {
     margin-right: 0;
 }
 
-.modal-close {
-    position: absolute;
-    top: 0;
-    right: -34px;
-    
-    width: 22px;
-    height: 22px;
-
-    font-size: 0;
-
-    background-color: transparent;
-    border: 0;
-
-    cursor: pointer;
-}
-
-.modal-close::before,
-.modal-close::after {
-    content: "";
-
-    position: absolute;
-    top: 10px;
-    left: 2px;
-
-    width: 19px;
-    height: 3px;
-
-    background-color: #d0d0d0;
-}
-
-.modal-close::before {
-    transform: rotate(45deg);
-}
-
-.modal-close::after {
-    transform: rotate(-45deg);
-}
-
-.modal-map {
-    top: 50%;
-    left: 50%;
-
-    width: 766px;
-    height: 561px;
-    margin-top: -280px;
-    margin-left: -390px;
-
-    border: 7px solid white;
-}
-
-.modal-map p {
-    margin: 0;
-}
-
 @keyframes bounce {
     0% {transform: translateY(-2000px);}
     70% {transform: translateY(30px);}
@@ -1264,9 +1264,4 @@ footer-copyright b {
     0%, 100% {transform: translateX(0);}
     10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
     20%, 40%, 60%, 80% {transform: translateX(10px);}
-}
-
-.modal-error {
-    animation-name: shake;
-    animation-duration: .6s;
 }

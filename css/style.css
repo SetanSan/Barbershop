@@ -16,6 +16,8 @@ body {
     background-attachment: fixed;
 }
 
+/*  12312312312312*/
+
 a {
     text-decoration: none;
     color: inherit;
@@ -475,8 +477,6 @@ a {
     background-color: transparent;
     border: 2px solid #000000;
 }
-
-
 
 .appointment__item input:focus {
     border-color: #663d15;
